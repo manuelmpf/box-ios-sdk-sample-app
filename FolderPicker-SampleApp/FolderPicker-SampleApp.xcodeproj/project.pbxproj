@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		544BEF6C178F3B5900A99088 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 544BEF6B178F3B1B00A99088 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		C5152CD417540D88007A5C0A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5152CD317540D88007A5C0A /* Security.framework */; };
 		C52C101C1753FB0900B4303F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52C101B1753FB0900B4303F /* UIKit.framework */; };
 		C52C101E1753FB0900B4303F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52C101D1753FB0900B4303F /* Foundation.framework */; };
@@ -64,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		544BEF6A178F3B1B00A99088 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		544BEF6B178F3B1B00A99088 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		C5152CD317540D88007A5C0A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C52C10171753FB0900B4303F /* FolderPicker-SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FolderPicker-SampleApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52C101B1753FB0900B4303F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -142,6 +145,8 @@
 				C52C10341753FB0900B4303F /* ViewController.m */,
 				C52C10361753FB0900B4303F /* ViewController_iPhone.xib */,
 				C52C10391753FB0900B4303F /* ViewController_iPad.xib */,
+				544BEF6A178F3B1B00A99088 /* KeychainItemWrapper.h */,
+				544BEF6B178F3B1B00A99088 /* KeychainItemWrapper.m */,
 				C52C10221753FB0900B4303F /* Supporting Files */,
 			);
 			path = "FolderPicker-SampleApp";
@@ -274,6 +279,7 @@
 				C52C10281753FB0900B4303F /* main.m in Sources */,
 				C52C102C1753FB0900B4303F /* AppDelegate.m in Sources */,
 				C52C10351753FB0900B4303F /* ViewController.m in Sources */,
+				544BEF6C178F3B5900A99088 /* KeychainItemWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,4 +16,10 @@
 
 @property (strong, nonatomic) ViewController *viewController;
 
+/**
+ * Destroy the current BoxOAuth2Session, remove tokens from memory,
+ * remove tokens from keychain.
+ */
+- (void)logoutFromBox;
+
 @end
