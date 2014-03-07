@@ -58,7 +58,9 @@
     NSLog(@"Access token  (%@) expires at %@", session.accessToken, session.accessTokenExpiration);
     NSLog(@"Refresh token (%@)", session.refreshToken);
 
-    [self dismissViewControllerAnimated:YES completion:nil];
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    });
 
     BOXAssert(self.viewControllers.count == 1, @"There should only be one folder in the hierarchy when authentication succeeds");
     BoxFolderViewController *rootVC = (BoxFolderViewController *)self.topViewController;
@@ -71,7 +73,9 @@
     NSString *oauth2Error = [[notification userInfo] valueForKey:BoxOAuth2AuthenticationErrorKey];
     NSLog(@"Authentication error  (%@)", oauth2Error);
 
-    [self dismissViewControllerAnimated:YES completion:nil];
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        [self dismissViewControllerAnimated:YES completion:nil];
+    });
 }
 
 - (void)boxAPIInitiateLogin:(NSNotification *)notification
