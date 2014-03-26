@@ -26,7 +26,6 @@
 		C561BC4918D2478D00634679 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C561BC3118D2478D00634679 /* UIKit.framework */; };
 		C561BC5118D2478D00634679 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C561BC4F18D2478D00634679 /* InfoPlist.strings */; };
 		C561BC5318D2478D00634679 /* BOXContractsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C561BC5218D2478D00634679 /* BOXContractsTests.m */; };
-		C561BC7018D247EE00634679 /* libBoxSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C561BC6518D247CC00634679 /* libBoxSDK.a */; };
 		C561BC7218D247FD00634679 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C561BC7118D247FD00634679 /* QuartzCore.framework */; };
 		C561BC7418D2480100634679 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C561BC7318D2480100634679 /* Security.framework */; };
 		C561BC7818D2488E00634679 /* BOXWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C561BC7718D2488E00634679 /* BOXWelcomeViewController.m */; };
@@ -44,54 +43,47 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C561BC4A18D2478D00634679 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C561BC2218D2478D00634679 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C561BC2918D2478D00634679;
-			remoteInfo = BOXContracts;
-		};
-		C561BC6418D247CC00634679 /* PBXContainerItemProxy */ = {
+		7091DC5C18E37CFC005F3E9F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E470433B16D41DC500FED29A;
 			remoteInfo = BoxSDK;
 		};
-		C561BC6618D247CC00634679 /* PBXContainerItemProxy */ = {
+		7091DC5E18E37CFC005F3E9F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E470434C16D41DC500FED29A;
 			remoteInfo = BoxSDKTests;
 		};
-		C561BC6818D247CC00634679 /* PBXContainerItemProxy */ = {
+		7091DC6018E37CFC005F3E9F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = E4081D8D1758728900F6D6AA;
 			remoteInfo = BoxSDKResources;
 		};
-		C561BC6A18D247CC00634679 /* PBXContainerItemProxy */ = {
+		7091DC6218E37CFC005F3E9F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F0E5E2E717A78AEF00153646;
 			remoteInfo = BoxCocoaSDK;
 		};
-		C561BC6C18D247CC00634679 /* PBXContainerItemProxy */ = {
+		7091DC6418E37CFC005F3E9F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F0E5E2FD17A78AEF00153646;
 			remoteInfo = BoxCocoaSDKTests;
 		};
-		C561BC6E18D247E500634679 /* PBXContainerItemProxy */ = {
+		C561BC4A18D2478D00634679 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
+			containerPortal = C561BC2218D2478D00634679 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E470433A16D41DC500FED29A;
-			remoteInfo = BoxSDK;
+			remoteGlobalIDString = C561BC2918D2478D00634679;
+			remoteInfo = BOXContracts;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -119,7 +111,7 @@
 		C561BC4E18D2478D00634679 /* BOXContractsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BOXContractsTests-Info.plist"; sourceTree = "<group>"; };
 		C561BC5018D2478D00634679 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C561BC5218D2478D00634679 /* BOXContractsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BOXContractsTests.m; sourceTree = "<group>"; };
-		C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BoxSDK.xcodeproj; path = "box-ios-sdk-v2/BoxSDK.xcodeproj"; sourceTree = "<group>"; };
+		C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BoxSDK.xcodeproj; path = ../vendor/BoxSDK/BoxSDK.xcodeproj; sourceTree = "<group>"; };
 		C561BC7118D247FD00634679 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C561BC7318D2480100634679 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		C561BC7618D2488E00634679 /* BOXWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BOXWelcomeViewController.h; path = Controllers/BOXWelcomeViewController.h; sourceTree = "<group>"; };
@@ -149,7 +141,6 @@
 			files = (
 				C561BC7418D2480100634679 /* Security.framework in Frameworks */,
 				C561BC7218D247FD00634679 /* QuartzCore.framework in Frameworks */,
-				C561BC7018D247EE00634679 /* libBoxSDK.a in Frameworks */,
 				C561BC3018D2478D00634679 /* CoreGraphics.framework in Frameworks */,
 				C561BC3218D2478D00634679 /* UIKit.framework in Frameworks */,
 				C561BC2E18D2478D00634679 /* Foundation.framework in Frameworks */,
@@ -169,6 +160,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7091DC5518E37CFC005F3E9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7091DC5D18E37CFC005F3E9F /* libBoxSDK.a */,
+				7091DC5F18E37CFC005F3E9F /* BoxSDKTests.octest */,
+				7091DC6118E37CFC005F3E9F /* BoxSDKResources.bundle */,
+				7091DC6318E37CFC005F3E9F /* BoxCocoaSDK.framework */,
+				7091DC6518E37CFC005F3E9F /* BoxCocoaSDKTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C561BC2118D2478D00634679 = {
 			isa = PBXGroup;
 			children = (
@@ -246,18 +249,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C561BC5D18D247CC00634679 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C561BC6518D247CC00634679 /* libBoxSDK.a */,
-				C561BC6718D247CC00634679 /* BoxSDKTests.octest */,
-				C561BC6918D247CC00634679 /* BoxSDKResources.bundle */,
-				C561BC6B18D247CC00634679 /* BoxCocoaSDK.framework */,
-				C561BC6D18D247CC00634679 /* BoxCocoaSDKTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		C561BC7518D2485100634679 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,7 +316,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C561BC6F18D247E500634679 /* PBXTargetDependency */,
 			);
 			name = BOXContracts;
 			productName = BOXContracts;
@@ -376,7 +366,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = C561BC5D18D247CC00634679 /* Products */;
+					ProductGroup = 7091DC5518E37CFC005F3E9F /* Products */;
 					ProjectRef = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
 				},
 			);
@@ -389,39 +379,39 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		C561BC6518D247CC00634679 /* libBoxSDK.a */ = {
+		7091DC5D18E37CFC005F3E9F /* libBoxSDK.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libBoxSDK.a;
-			remoteRef = C561BC6418D247CC00634679 /* PBXContainerItemProxy */;
+			remoteRef = 7091DC5C18E37CFC005F3E9F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C561BC6718D247CC00634679 /* BoxSDKTests.octest */ = {
+		7091DC5F18E37CFC005F3E9F /* BoxSDKTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = BoxSDKTests.octest;
-			remoteRef = C561BC6618D247CC00634679 /* PBXContainerItemProxy */;
+			remoteRef = 7091DC5E18E37CFC005F3E9F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C561BC6918D247CC00634679 /* BoxSDKResources.bundle */ = {
+		7091DC6118E37CFC005F3E9F /* BoxSDKResources.bundle */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = BoxSDKResources.bundle;
-			remoteRef = C561BC6818D247CC00634679 /* PBXContainerItemProxy */;
+			remoteRef = 7091DC6018E37CFC005F3E9F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C561BC6B18D247CC00634679 /* BoxCocoaSDK.framework */ = {
+		7091DC6318E37CFC005F3E9F /* BoxCocoaSDK.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = BoxCocoaSDK.framework;
-			remoteRef = C561BC6A18D247CC00634679 /* PBXContainerItemProxy */;
+			remoteRef = 7091DC6218E37CFC005F3E9F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		C561BC6D18D247CC00634679 /* BoxCocoaSDKTests.octest */ = {
+		7091DC6518E37CFC005F3E9F /* BoxCocoaSDKTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = BoxCocoaSDKTests.octest;
-			remoteRef = C561BC6C18D247CC00634679 /* PBXContainerItemProxy */;
+			remoteRef = 7091DC6418E37CFC005F3E9F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -490,11 +480,6 @@
 			isa = PBXTargetDependency;
 			target = C561BC2918D2478D00634679 /* BOXContracts */;
 			targetProxy = C561BC4A18D2478D00634679 /* PBXContainerItemProxy */;
-		};
-		C561BC6F18D247E500634679 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = BoxSDK;
-			targetProxy = C561BC6E18D247E500634679 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
