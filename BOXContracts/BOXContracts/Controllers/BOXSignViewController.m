@@ -8,6 +8,7 @@
 
 #import "BOXSignViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+#import <BoxSDK/BoxSDK.h>
 
 @interface BOXSignViewController ()
 
@@ -99,7 +100,7 @@ static void (^uploadDidProgress)(long long expectedTotalBytes, unsigned long lon
 {    
     BoxItemPickerViewController *folderPicker = [[BoxSDK sharedSDK] 
                                                  itemPickerWithDelegate:self 
-                                                 selectableObjectType:BOXItemPickerObjectTypeFolder];
+                                                 selectableObjectType:BoxItemPickerObjectTypeFolder];
     [self displayController:folderPicker];
 }
 

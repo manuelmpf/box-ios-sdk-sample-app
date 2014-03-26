@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7091DC6618E380EE005F3E9F /* libBoxSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7091DC5D18E37CFC005F3E9F /* libBoxSDK.a */; };
 		C50EFF7818DCA47A00B2E256 /* background-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = C50EFF7318DCA47A00B2E256 /* background-profile.png */; };
 		C50EFF7918DCA47A00B2E256 /* background-selectfile.png in Resources */ = {isa = PBXBuildFile; fileRef = C50EFF7418DCA47A00B2E256 /* background-selectfile.png */; };
 		C50EFF7A18DCA47A00B2E256 /* icon-selectfile.png in Resources */ = {isa = PBXBuildFile; fileRef = C50EFF7518DCA47A00B2E256 /* icon-selectfile.png */; };
@@ -78,6 +79,13 @@
 			remoteGlobalIDString = F0E5E2FD17A78AEF00153646;
 			remoteInfo = BoxCocoaSDKTests;
 		};
+		7091DC6718E38219005F3E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E470433A16D41DC500FED29A;
+			remoteInfo = BoxSDK;
+		};
 		C561BC4A18D2478D00634679 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C561BC2218D2478D00634679 /* Project object */;
@@ -139,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7091DC6618E380EE005F3E9F /* libBoxSDK.a in Frameworks */,
 				C561BC7418D2480100634679 /* Security.framework in Frameworks */,
 				C561BC7218D247FD00634679 /* QuartzCore.framework in Frameworks */,
 				C561BC3018D2478D00634679 /* CoreGraphics.framework in Frameworks */,
@@ -316,6 +325,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7091DC6818E38219005F3E9F /* PBXTargetDependency */,
 			);
 			name = BOXContracts;
 			productName = BOXContracts;
@@ -476,6 +486,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7091DC6818E38219005F3E9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BoxSDK;
+			targetProxy = 7091DC6718E38219005F3E9F /* PBXContainerItemProxy */;
+		};
 		C561BC4B18D2478D00634679 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C561BC2918D2478D00634679 /* BOXContracts */;

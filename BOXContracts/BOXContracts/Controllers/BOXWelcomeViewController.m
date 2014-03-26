@@ -8,6 +8,7 @@
 
 #import "BOXWelcomeViewController.h"
 #import "BOXShareViewController.h"
+#import <BoxSDK/BoxSDK.h>
 
 typedef NS_ENUM(NSUInteger, BOXWelcomeScreenMode) {
     BOXWelcomeScreenModeDefault = 0,
@@ -117,7 +118,7 @@ static void (^downloadDidProgress)(long long expectedTotalBytes, unsigned long l
     if (!_boxContractPicker) {
         _boxContractPicker = [[BoxSDK sharedSDK] 
                               itemPickerWithDelegate:self 
-                              selectableObjectType:BOXItemPickerObjectTypeFile];
+                              selectableObjectType:BoxItemPickerObjectTypeFile];
     }
     
     return _boxContractPicker;
