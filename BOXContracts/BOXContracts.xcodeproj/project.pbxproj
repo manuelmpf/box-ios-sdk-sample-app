@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C50EFF7818DCA47A00B2E256 /* background-profile.png in Resources */ = {isa = PBXBuildFile; fileRef = C50EFF7318DCA47A00B2E256 /* background-profile.png */; };
+		C50EFF7918DCA47A00B2E256 /* background-selectfile.png in Resources */ = {isa = PBXBuildFile; fileRef = C50EFF7418DCA47A00B2E256 /* background-selectfile.png */; };
+		C50EFF7A18DCA47A00B2E256 /* icon-selectfile.png in Resources */ = {isa = PBXBuildFile; fileRef = C50EFF7518DCA47A00B2E256 /* icon-selectfile.png */; };
+		C50EFF7B18DCA47A00B2E256 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = C50EFF7618DCA47A00B2E256 /* avatar.png */; };
+		C50EFF7C18DCA47A00B2E256 /* icon-email.png in Resources */ = {isa = PBXBuildFile; fileRef = C50EFF7718DCA47A00B2E256 /* icon-email.png */; };
+		C50EFF8318DCA4B300B2E256 /* button_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = C50EFF8118DCA4B300B2E256 /* button_blue.png */; };
+		C50EFF8418DCA4B300B2E256 /* button_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = C50EFF8218DCA4B300B2E256 /* button_gray.png */; };
+		C561BC2E18D2478D00634679 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C561BC2D18D2478D00634679 /* Foundation.framework */; };
+		C561BC3018D2478D00634679 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C561BC2F18D2478D00634679 /* CoreGraphics.framework */; };
+		C561BC3218D2478D00634679 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C561BC3118D2478D00634679 /* UIKit.framework */; };
+		C561BC3818D2478D00634679 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C561BC3618D2478D00634679 /* InfoPlist.strings */; };
+		C561BC3A18D2478D00634679 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C561BC3918D2478D00634679 /* main.m */; };
+		C561BC3E18D2478D00634679 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C561BC3D18D2478D00634679 /* AppDelegate.m */; };
+		C561BC4018D2478D00634679 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C561BC3F18D2478D00634679 /* Images.xcassets */; };
+		C561BC4718D2478D00634679 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C561BC4618D2478D00634679 /* XCTest.framework */; };
+		C561BC4818D2478D00634679 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C561BC2D18D2478D00634679 /* Foundation.framework */; };
+		C561BC4918D2478D00634679 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C561BC3118D2478D00634679 /* UIKit.framework */; };
+		C561BC5118D2478D00634679 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C561BC4F18D2478D00634679 /* InfoPlist.strings */; };
+		C561BC5318D2478D00634679 /* BOXContractsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C561BC5218D2478D00634679 /* BOXContractsTests.m */; };
+		C561BC7018D247EE00634679 /* libBoxSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C561BC6518D247CC00634679 /* libBoxSDK.a */; };
+		C561BC7218D247FD00634679 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C561BC7118D247FD00634679 /* QuartzCore.framework */; };
+		C561BC7418D2480100634679 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C561BC7318D2480100634679 /* Security.framework */; };
+		C561BC7818D2488E00634679 /* BOXWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C561BC7718D2488E00634679 /* BOXWelcomeViewController.m */; };
+		C561BC7F18D24A2D00634679 /* blur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C561BC7E18D24A2D00634679 /* blur.jpg */; };
+		C561BC8218D253DD00634679 /* BOXSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C561BC8118D253DD00634679 /* BOXSignViewController.m */; };
+		C561BC8518D2563900634679 /* bkg-navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = C561BC8318D2563900634679 /* bkg-navbar.png */; };
+		C561BC8618D2563900634679 /* bkg-navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C561BC8418D2563900634679 /* bkg-navbar@2x.png */; };
+		C561BC8818D2572300634679 /* signature1.png in Resources */ = {isa = PBXBuildFile; fileRef = C561BC8718D2572300634679 /* signature1.png */; };
+		C561BC8A18D25B2E00634679 /* signature2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C561BC8918D25B2E00634679 /* signature2.jpg */; };
+		C561BC9018D261D600634679 /* BOXAuthenticationService.m in Sources */ = {isa = PBXBuildFile; fileRef = C561BC8D18D261D600634679 /* BOXAuthenticationService.m */; };
+		C561BC9118D261D600634679 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C561BC8F18D261D600634679 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C59E4F4918D27314004C423B /* BoxSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C59E4F4818D27314004C423B /* BoxSDKResources.bundle */; };
+		C5E978DF18D3938500FCCCCA /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E978DE18D3938500FCCCCA /* MBProgressHUD.m */; };
+		C5E978E218D3A27600FCCCCA /* BOXShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E978E118D3A27600FCCCCA /* BOXShareViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C561BC4A18D2478D00634679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C561BC2218D2478D00634679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C561BC2918D2478D00634679;
+			remoteInfo = BOXContracts;
+		};
+		C561BC6418D247CC00634679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E470433B16D41DC500FED29A;
+			remoteInfo = BoxSDK;
+		};
+		C561BC6618D247CC00634679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E470434C16D41DC500FED29A;
+			remoteInfo = BoxSDKTests;
+		};
+		C561BC6818D247CC00634679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4081D8D1758728900F6D6AA;
+			remoteInfo = BoxSDKResources;
+		};
+		C561BC6A18D247CC00634679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0E5E2E717A78AEF00153646;
+			remoteInfo = BoxCocoaSDK;
+		};
+		C561BC6C18D247CC00634679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0E5E2FD17A78AEF00153646;
+			remoteInfo = BoxCocoaSDKTests;
+		};
+		C561BC6E18D247E500634679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E470433A16D41DC500FED29A;
+			remoteInfo = BoxSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C50EFF7318DCA47A00B2E256 /* background-profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-profile.png"; sourceTree = "<group>"; };
+		C50EFF7418DCA47A00B2E256 /* background-selectfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-selectfile.png"; sourceTree = "<group>"; };
+		C50EFF7518DCA47A00B2E256 /* icon-selectfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-selectfile.png"; sourceTree = "<group>"; };
+		C50EFF7618DCA47A00B2E256 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		C50EFF7718DCA47A00B2E256 /* icon-email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-email.png"; sourceTree = "<group>"; };
+		C50EFF8118DCA4B300B2E256 /* button_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_blue.png; sourceTree = "<group>"; };
+		C50EFF8218DCA4B300B2E256 /* button_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_gray.png; sourceTree = "<group>"; };
+		C561BC2A18D2478D00634679 /* BOXContracts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOXContracts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C561BC2D18D2478D00634679 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C561BC2F18D2478D00634679 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C561BC3118D2478D00634679 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C561BC3518D2478D00634679 /* BOXContracts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BOXContracts-Info.plist"; sourceTree = "<group>"; };
+		C561BC3718D2478D00634679 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C561BC3918D2478D00634679 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C561BC3B18D2478D00634679 /* BOXContracts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BOXContracts-Prefix.pch"; sourceTree = "<group>"; };
+		C561BC3C18D2478D00634679 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C561BC3D18D2478D00634679 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C561BC3F18D2478D00634679 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C561BC4518D2478D00634679 /* BOXContractsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BOXContractsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C561BC4618D2478D00634679 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C561BC4E18D2478D00634679 /* BOXContractsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BOXContractsTests-Info.plist"; sourceTree = "<group>"; };
+		C561BC5018D2478D00634679 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C561BC5218D2478D00634679 /* BOXContractsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BOXContractsTests.m; sourceTree = "<group>"; };
+		C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BoxSDK.xcodeproj; path = "box-ios-sdk-v2/BoxSDK.xcodeproj"; sourceTree = "<group>"; };
+		C561BC7118D247FD00634679 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C561BC7318D2480100634679 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C561BC7618D2488E00634679 /* BOXWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BOXWelcomeViewController.h; path = Controllers/BOXWelcomeViewController.h; sourceTree = "<group>"; };
+		C561BC7718D2488E00634679 /* BOXWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BOXWelcomeViewController.m; path = Controllers/BOXWelcomeViewController.m; sourceTree = "<group>"; };
+		C561BC7E18D24A2D00634679 /* blur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blur.jpg; sourceTree = "<group>"; };
+		C561BC8018D253DD00634679 /* BOXSignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BOXSignViewController.h; path = Controllers/BOXSignViewController.h; sourceTree = "<group>"; };
+		C561BC8118D253DD00634679 /* BOXSignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BOXSignViewController.m; path = Controllers/BOXSignViewController.m; sourceTree = "<group>"; };
+		C561BC8318D2563900634679 /* bkg-navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bkg-navbar.png"; sourceTree = "<group>"; };
+		C561BC8418D2563900634679 /* bkg-navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bkg-navbar@2x.png"; sourceTree = "<group>"; };
+		C561BC8718D2572300634679 /* signature1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signature1.png; sourceTree = "<group>"; };
+		C561BC8918D25B2E00634679 /* signature2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = signature2.jpg; sourceTree = "<group>"; };
+		C561BC8C18D261D600634679 /* BOXAuthenticationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BOXAuthenticationService.h; path = "Authentication Management/BOXAuthenticationService.h"; sourceTree = "<group>"; };
+		C561BC8D18D261D600634679 /* BOXAuthenticationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BOXAuthenticationService.m; path = "Authentication Management/BOXAuthenticationService.m"; sourceTree = "<group>"; };
+		C561BC8E18D261D600634679 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainItemWrapper.h; path = "Authentication Management/KeychainItemWrapper.h"; sourceTree = "<group>"; };
+		C561BC8F18D261D600634679 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainItemWrapper.m; path = "Authentication Management/KeychainItemWrapper.m"; sourceTree = "<group>"; };
+		C59E4F4818D27314004C423B /* BoxSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BoxSDKResources.bundle; sourceTree = SOURCE_ROOT; };
+		C5E978DD18D3938500FCCCCA /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Libraries/MBProgressHUD.h; sourceTree = "<group>"; };
+		C5E978DE18D3938500FCCCCA /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Libraries/MBProgressHUD.m; sourceTree = "<group>"; };
+		C5E978E018D3A27600FCCCCA /* BOXShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BOXShareViewController.h; path = Controllers/BOXShareViewController.h; sourceTree = "<group>"; };
+		C5E978E118D3A27600FCCCCA /* BOXShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BOXShareViewController.m; path = Controllers/BOXShareViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C561BC2718D2478D00634679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C561BC7418D2480100634679 /* Security.framework in Frameworks */,
+				C561BC7218D247FD00634679 /* QuartzCore.framework in Frameworks */,
+				C561BC7018D247EE00634679 /* libBoxSDK.a in Frameworks */,
+				C561BC3018D2478D00634679 /* CoreGraphics.framework in Frameworks */,
+				C561BC3218D2478D00634679 /* UIKit.framework in Frameworks */,
+				C561BC2E18D2478D00634679 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C561BC4218D2478D00634679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C561BC4718D2478D00634679 /* XCTest.framework in Frameworks */,
+				C561BC4918D2478D00634679 /* UIKit.framework in Frameworks */,
+				C561BC4818D2478D00634679 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C561BC2118D2478D00634679 = {
+			isa = PBXGroup;
+			children = (
+				C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */,
+				C561BC3318D2478D00634679 /* BOXContracts */,
+				C561BC4C18D2478D00634679 /* BOXContractsTests */,
+				C561BC2C18D2478D00634679 /* Frameworks */,
+				C561BC2B18D2478D00634679 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C561BC2B18D2478D00634679 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C561BC2A18D2478D00634679 /* BOXContracts.app */,
+				C561BC4518D2478D00634679 /* BOXContractsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C561BC2C18D2478D00634679 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C561BC7318D2480100634679 /* Security.framework */,
+				C561BC7118D247FD00634679 /* QuartzCore.framework */,
+				C561BC2D18D2478D00634679 /* Foundation.framework */,
+				C561BC2F18D2478D00634679 /* CoreGraphics.framework */,
+				C561BC3118D2478D00634679 /* UIKit.framework */,
+				C561BC4618D2478D00634679 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C561BC3318D2478D00634679 /* BOXContracts */ = {
+			isa = PBXGroup;
+			children = (
+				C561BC8B18D261B400634679 /* Authentication Management */,
+				C561BC7518D2485100634679 /* Controllers */,
+				C561BC3C18D2478D00634679 /* AppDelegate.h */,
+				C561BC3D18D2478D00634679 /* AppDelegate.m */,
+				C561BC3418D2478D00634679 /* Supporting Files */,
+			);
+			path = BOXContracts;
+			sourceTree = "<group>";
+		};
+		C561BC3418D2478D00634679 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5E978D818D3934500FCCCCA /* Libraries */,
+				C561BC3F18D2478D00634679 /* Images.xcassets */,
+				C561BC7918D249AE00634679 /* Ressources */,
+				C561BC3518D2478D00634679 /* BOXContracts-Info.plist */,
+				C561BC3618D2478D00634679 /* InfoPlist.strings */,
+				C561BC3918D2478D00634679 /* main.m */,
+				C561BC3B18D2478D00634679 /* BOXContracts-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C561BC4C18D2478D00634679 /* BOXContractsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C561BC5218D2478D00634679 /* BOXContractsTests.m */,
+				C561BC4D18D2478D00634679 /* Supporting Files */,
+			);
+			path = BOXContractsTests;
+			sourceTree = "<group>";
+		};
+		C561BC4D18D2478D00634679 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C561BC4E18D2478D00634679 /* BOXContractsTests-Info.plist */,
+				C561BC4F18D2478D00634679 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C561BC5D18D247CC00634679 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C561BC6518D247CC00634679 /* libBoxSDK.a */,
+				C561BC6718D247CC00634679 /* BoxSDKTests.octest */,
+				C561BC6918D247CC00634679 /* BoxSDKResources.bundle */,
+				C561BC6B18D247CC00634679 /* BoxCocoaSDK.framework */,
+				C561BC6D18D247CC00634679 /* BoxCocoaSDKTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C561BC7518D2485100634679 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C561BC7618D2488E00634679 /* BOXWelcomeViewController.h */,
+				C561BC7718D2488E00634679 /* BOXWelcomeViewController.m */,
+				C561BC8018D253DD00634679 /* BOXSignViewController.h */,
+				C561BC8118D253DD00634679 /* BOXSignViewController.m */,
+				C5E978E018D3A27600FCCCCA /* BOXShareViewController.h */,
+				C5E978E118D3A27600FCCCCA /* BOXShareViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C561BC7918D249AE00634679 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				C50EFF8118DCA4B300B2E256 /* button_blue.png */,
+				C50EFF8218DCA4B300B2E256 /* button_gray.png */,
+				C50EFF7318DCA47A00B2E256 /* background-profile.png */,
+				C50EFF7418DCA47A00B2E256 /* background-selectfile.png */,
+				C50EFF7518DCA47A00B2E256 /* icon-selectfile.png */,
+				C50EFF7618DCA47A00B2E256 /* avatar.png */,
+				C50EFF7718DCA47A00B2E256 /* icon-email.png */,
+				C59E4F4818D27314004C423B /* BoxSDKResources.bundle */,
+				C561BC8918D25B2E00634679 /* signature2.jpg */,
+				C561BC8718D2572300634679 /* signature1.png */,
+				C561BC8318D2563900634679 /* bkg-navbar.png */,
+				C561BC8418D2563900634679 /* bkg-navbar@2x.png */,
+				C561BC7E18D24A2D00634679 /* blur.jpg */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		C561BC8B18D261B400634679 /* Authentication Management */ = {
+			isa = PBXGroup;
+			children = (
+				C561BC8C18D261D600634679 /* BOXAuthenticationService.h */,
+				C561BC8D18D261D600634679 /* BOXAuthenticationService.m */,
+				C561BC8E18D261D600634679 /* KeychainItemWrapper.h */,
+				C561BC8F18D261D600634679 /* KeychainItemWrapper.m */,
+			);
+			name = "Authentication Management";
+			sourceTree = "<group>";
+		};
+		C5E978D818D3934500FCCCCA /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C5E978DD18D3938500FCCCCA /* MBProgressHUD.h */,
+				C5E978DE18D3938500FCCCCA /* MBProgressHUD.m */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C561BC2918D2478D00634679 /* BOXContracts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C561BC5618D2478D00634679 /* Build configuration list for PBXNativeTarget "BOXContracts" */;
+			buildPhases = (
+				C561BC2618D2478D00634679 /* Sources */,
+				C561BC2718D2478D00634679 /* Frameworks */,
+				C561BC2818D2478D00634679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C561BC6F18D247E500634679 /* PBXTargetDependency */,
+			);
+			name = BOXContracts;
+			productName = BOXContracts;
+			productReference = C561BC2A18D2478D00634679 /* BOXContracts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C561BC4418D2478D00634679 /* BOXContractsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C561BC5918D2478D00634679 /* Build configuration list for PBXNativeTarget "BOXContractsTests" */;
+			buildPhases = (
+				C561BC4118D2478D00634679 /* Sources */,
+				C561BC4218D2478D00634679 /* Frameworks */,
+				C561BC4318D2478D00634679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C561BC4B18D2478D00634679 /* PBXTargetDependency */,
+			);
+			name = BOXContractsTests;
+			productName = BOXContractsTests;
+			productReference = C561BC4518D2478D00634679 /* BOXContractsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C561BC2218D2478D00634679 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Box, Inc.";
+				TargetAttributes = {
+					C561BC4418D2478D00634679 = {
+						TestTargetID = C561BC2918D2478D00634679;
+					};
+				};
+			};
+			buildConfigurationList = C561BC2518D2478D00634679 /* Build configuration list for PBXProject "BOXContracts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C561BC2118D2478D00634679;
+			productRefGroup = C561BC2B18D2478D00634679 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C561BC5D18D247CC00634679 /* Products */;
+					ProjectRef = C561BC5C18D247CC00634679 /* BoxSDK.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C561BC2918D2478D00634679 /* BOXContracts */,
+				C561BC4418D2478D00634679 /* BOXContractsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C561BC6518D247CC00634679 /* libBoxSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libBoxSDK.a;
+			remoteRef = C561BC6418D247CC00634679 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C561BC6718D247CC00634679 /* BoxSDKTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BoxSDKTests.octest;
+			remoteRef = C561BC6618D247CC00634679 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C561BC6918D247CC00634679 /* BoxSDKResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BoxSDKResources.bundle;
+			remoteRef = C561BC6818D247CC00634679 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C561BC6B18D247CC00634679 /* BoxCocoaSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BoxCocoaSDK.framework;
+			remoteRef = C561BC6A18D247CC00634679 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C561BC6D18D247CC00634679 /* BoxCocoaSDKTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BoxCocoaSDKTests.octest;
+			remoteRef = C561BC6C18D247CC00634679 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C561BC2818D2478D00634679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C50EFF7C18DCA47A00B2E256 /* icon-email.png in Resources */,
+				C561BC8518D2563900634679 /* bkg-navbar.png in Resources */,
+				C50EFF7918DCA47A00B2E256 /* background-selectfile.png in Resources */,
+				C50EFF8318DCA4B300B2E256 /* button_blue.png in Resources */,
+				C561BC3818D2478D00634679 /* InfoPlist.strings in Resources */,
+				C561BC7F18D24A2D00634679 /* blur.jpg in Resources */,
+				C50EFF8418DCA4B300B2E256 /* button_gray.png in Resources */,
+				C561BC8618D2563900634679 /* bkg-navbar@2x.png in Resources */,
+				C561BC8818D2572300634679 /* signature1.png in Resources */,
+				C50EFF7B18DCA47A00B2E256 /* avatar.png in Resources */,
+				C50EFF7A18DCA47A00B2E256 /* icon-selectfile.png in Resources */,
+				C561BC4018D2478D00634679 /* Images.xcassets in Resources */,
+				C59E4F4918D27314004C423B /* BoxSDKResources.bundle in Resources */,
+				C561BC8A18D25B2E00634679 /* signature2.jpg in Resources */,
+				C50EFF7818DCA47A00B2E256 /* background-profile.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C561BC4318D2478D00634679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C561BC5118D2478D00634679 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C561BC2618D2478D00634679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C561BC3E18D2478D00634679 /* AppDelegate.m in Sources */,
+				C561BC7818D2488E00634679 /* BOXWelcomeViewController.m in Sources */,
+				C561BC9118D261D600634679 /* KeychainItemWrapper.m in Sources */,
+				C561BC9018D261D600634679 /* BOXAuthenticationService.m in Sources */,
+				C561BC3A18D2478D00634679 /* main.m in Sources */,
+				C561BC8218D253DD00634679 /* BOXSignViewController.m in Sources */,
+				C5E978E218D3A27600FCCCCA /* BOXShareViewController.m in Sources */,
+				C5E978DF18D3938500FCCCCA /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C561BC4118D2478D00634679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C561BC5318D2478D00634679 /* BOXContractsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C561BC4B18D2478D00634679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C561BC2918D2478D00634679 /* BOXContracts */;
+			targetProxy = C561BC4A18D2478D00634679 /* PBXContainerItemProxy */;
+		};
+		C561BC6F18D247E500634679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BoxSDK;
+			targetProxy = C561BC6E18D247E500634679 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C561BC3618D2478D00634679 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C561BC3718D2478D00634679 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C561BC4F18D2478D00634679 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C561BC5018D2478D00634679 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C561BC5418D2478D00634679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C561BC5518D2478D00634679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C561BC5718D2478D00634679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BOXContracts/BOXContracts-Prefix.pch";
+				INFOPLIST_FILE = "BOXContracts/BOXContracts-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C561BC5818D2478D00634679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BOXContracts/BOXContracts-Prefix.pch";
+				INFOPLIST_FILE = "BOXContracts/BOXContracts-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C561BC5A18D2478D00634679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BOXContracts.app/BOXContracts";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BOXContracts/BOXContracts-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BOXContractsTests/BOXContractsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C561BC5B18D2478D00634679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BOXContracts.app/BOXContracts";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BOXContracts/BOXContracts-Prefix.pch";
+				INFOPLIST_FILE = "BOXContractsTests/BOXContractsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C561BC2518D2478D00634679 /* Build configuration list for PBXProject "BOXContracts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C561BC5418D2478D00634679 /* Debug */,
+				C561BC5518D2478D00634679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C561BC5618D2478D00634679 /* Build configuration list for PBXNativeTarget "BOXContracts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C561BC5718D2478D00634679 /* Debug */,
+				C561BC5818D2478D00634679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C561BC5918D2478D00634679 /* Build configuration list for PBXNativeTarget "BOXContractsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C561BC5A18D2478D00634679 /* Debug */,
+				C561BC5B18D2478D00634679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C561BC2218D2478D00634679 /* Project object */;
+}
