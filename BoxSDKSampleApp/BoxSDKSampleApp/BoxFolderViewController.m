@@ -273,7 +273,7 @@
         NSLog(@"download error with response code: %i", response.statusCode);
     };
 
-    [[BoxSDK sharedSDK].filesManager downloadFileWithID:fileID outputStream:outputStream requestBuilder:nil success:successBlock failure:failureBlock];
+    [[BoxSDK sharedSDK].filesManager downloadFileWithID:fileID outputStream:outputStream requestBuilder:nil success:successBlock failure:failureBlock progress:nil];
 }
 
 #pragma mark - UITableViewDelegate
