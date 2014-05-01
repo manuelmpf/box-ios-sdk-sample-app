@@ -38,7 +38,7 @@
 		C561BC8A18D25B2E00634679 /* signature2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C561BC8918D25B2E00634679 /* signature2.jpg */; };
 		C561BC9018D261D600634679 /* BOXAuthenticationService.m in Sources */ = {isa = PBXBuildFile; fileRef = C561BC8D18D261D600634679 /* BOXAuthenticationService.m */; };
 		C561BC9118D261D600634679 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = C561BC8F18D261D600634679 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C59E4F4918D27314004C423B /* BoxSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C59E4F4818D27314004C423B /* BoxSDKResources.bundle */; };
+		C5C37F6E19130E8B00344043 /* BoxSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7091DC6118E37CFC005F3E9F /* BoxSDKResources.bundle */; };
 		C5E978DF18D3938500FCCCCA /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E978DE18D3938500FCCCCA /* MBProgressHUD.m */; };
 		C5E978E218D3A27600FCCCCA /* BOXShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E978E118D3A27600FCCCCA /* BOXShareViewController.m */; };
 /* End PBXBuildFile section */
@@ -442,8 +442,8 @@
 				C561BC8818D2572300634679 /* signature1.png in Resources */,
 				C50EFF7B18DCA47A00B2E256 /* avatar.png in Resources */,
 				C50EFF7A18DCA47A00B2E256 /* icon-selectfile.png in Resources */,
+				C5C37F6E19130E8B00344043 /* BoxSDKResources.bundle in Resources */,
 				C561BC4018D2478D00634679 /* Images.xcassets in Resources */,
-				C59E4F4918D27314004C423B /* BoxSDKResources.bundle in Resources */,
 				C561BC8A18D25B2E00634679 /* signature2.jpg in Resources */,
 				C50EFF7818DCA47A00B2E256 /* background-profile.png in Resources */,
 			);
